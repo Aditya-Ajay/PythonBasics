@@ -1,0 +1,55 @@
+Python progarming language has the following feature 
+
+1- Interpreted : It directly run the program for the source code .
+Internally, Python converts the source code into an intermediate form
+called bytecodes which is then translated into native language of specific computer 
+to run it . 
+
+2 - Platform Independent 
+
+3 - Free and Open Source
+
+4- Simple
+
+5- Rich Library Support
+
+Current Applications of Python
+
+A number of Linux distributions use installers written in Python example in Ubuntu we have the Ubiquity
+Python has seen extensive use in the information security industry, including in exploit development.
+Raspberry Pi– single board computer uses Python as its principal user-programming language.
+Python is now being used Game Development areas also.
+
+
+Name Space And Scope in python 
+
+A namespace is a system that has a unique name for each and every object in Python.
+
+A lifetime of a namespace depends upon the scope of objects, if the scope of an object ends, 
+the lifetime of that namespace comes to an end. Hence, it is not possible to access 
+the inner namespace’s objects from an outer namespace.
+
+
+   INDENTATION IN PYTHON 
+---------------------------
+
+One of the distinctive features of Python is its use of indentation to highlight the 
+blocks of code. Whitespace is used for indentation in Python. All statements with the 
+same distance to the right belong to the same block of code. If a block has to be more 
+deeply nested,it is simply indented further to the right. 
+
+
+     COMMENTS IN PYTHON 
+----------------------------
+
+Single-line comments: Python single-line comment starts with a hashtag symbol with 
+no white spaces (#)
+
+Multi-line string as a comment: Python multi-line comment is a piece of text enclosed 
+in a delimiter (“””) on each end of the comment. Again there should be no white space 
+between delimiter (“””).
+
+
+Docstrings: Docstrings are a type of comment that is used to show how the program 
+works. Docstrings are surrounded by triple quotes (“”” “””). Docstrings are also neglected
+ by the interpreter.
