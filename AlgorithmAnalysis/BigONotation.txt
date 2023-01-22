@@ -2,3 +2,11 @@ What Exactly is Big O noatation ?
 
 Big O notation is a mathematical notation that describes the limiting behavior of a function 
 when the argument tends towards a particular value or infinity.
+
+IT BASICALLY TELLS WITH THE INCREASING INPUT , HOW MUCH TIME AND SPACE IS REQUIRED 
+
+==> Constant does not play the significant role while calculating the BIG O notation 
+    because on the scal where the input size is in  millions the importance of constant decrease 
+    as constant in any step does not scale with the input to the function 
+
+    
