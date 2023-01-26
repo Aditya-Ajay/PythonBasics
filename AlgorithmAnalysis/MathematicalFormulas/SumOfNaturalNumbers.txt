@@ -1,0 +1,5 @@
+To calculate the sum of of numbers upto n terms
+
+THE FORMULA IS 
+
+n = n * (n+1)/2
