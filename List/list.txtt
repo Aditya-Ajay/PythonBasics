@@ -1,0 +1,67 @@
+A list in Python is a way to store a collection of items, like a shopping 
+list or a list of names. These items are stored in the computer's memory, 
+and the list helps keep track of where each item is stored. The items are 
+stored in a "block" of memory, and this block is "contiguous" which means 
+the items are stored next to each other without any gaps. This makes it 
+easy for the computer to quickly find any item in the list.
+
+Think of a list as a shelf in a library. The books on the shelf are the items 
+in the list, and the shelf is the block of memory. If the books are arranged in 
+order, without any gaps between them, it is easy to find any book you want. The 
+same is true for items in a list in Python. They are stored in a contiguous block 
+of memory, which makes it easy for the computer to find any item in the list quickly.
+
+
+Lists in Python have a reference to the contiguous block of memory where their 
+elements are stored. This reference allows the list to access the elements stored 
+in the block and to manipulate them as needed, such as adding or removing elements, 
+or changing the order of elements. The reference to the memory block, along with the 
+length of the list and the type of elements stored, is stored as metadata associated 
+with the list. The Python interpreter uses this metadata to manage the list and its 
+elements, making it easy for you to use lists in your code without having to worry 
+about the underlying memory management. In this way, lists in Python abstract the 
+details of memory management, allowing you to focus on the logic of your program.
+
+
+---------------------------------------------------------------------------------------------------
+
+
+       HOW DOES DYNAMIC SIZE WORK IN PYTHON ? 
+
+---------------------------------------------------------
+
+
+When a list in Python runs out of space to store new elements, the Python interpreter 
+automatically allocates a larger block of memory to store the new elements. This is 
+done transparently and without the need for manual intervention.
+
+
+
+
+
+Here's how it works:
+
+The current block of memory that stores the elements of the list has a fixed size, 
+and once it is full, no more elements can be added.
+
+When you try to add a new element to the list, the Python interpreter checks if there 
+is enough space in the current block of memory to store the new element.
+
+If there is not enough space, the Python interpreter allocates a new, larger block of 
+memory to store the elements of the list, including the new element.
+
+The interpreter then copies the elements from the old block of memory to the new block. This is done to ensure that the elements are stored in a contiguous block of memory, which makes accessing and manipulating the elements more efficient.
+
+Once the elements have been copied, the old block of memory is freed, and the list's 
+reference to the memory block is updated to point to the new block of memory.
+
+This process of allocating a larger block of memory and copying the elements from the 
+old block to the new block is transparent to the programmer and happens automatically,
+without the need for manual intervention. The new block of memory is larger than the old block, so it can store more elements, and the process can repeat as needed as more elements are added to the list.
+
+In this way, lists in Python provide a dynamic size feature, which allows you to add 
+and remove elements from the list without having to manually allocate or resize memory. This makes lists a flexible and efficient data structure for many programming tasks.
+
+
+When elements are removed from a list, the Python interpreter may also choose to 
+shrink the size of the memory block to reduce the amount of unused memory. This is done to optimize the use of memory and avoid wasting resources.
