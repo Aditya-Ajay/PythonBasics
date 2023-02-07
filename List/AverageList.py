@@ -76,7 +76,7 @@ def seg(l):
     print(even, odd)
 
 
-seg([2, 9, 10, 35])
+# seg([2, 9, 10, 35])
 
 
 string = "geeksforgeeks"
@@ -98,4 +98,56 @@ def largetNumber(list):
     return largestNumber
 
 
-print(largetNumber([2, 10, 34, 38, 42]))
+# print(largetNumber([2, 10, 34, 38, 42]))
+
+
+'''
+ANOTHER METHOD 
+
+'''
+
+
+def getMax(list):
+    for x in list:
+        for y in list:
+            if y > x:
+                break
+        else:
+            return x
+    return None
+
+
+# print(getMax([2, 8, 19]))
+
+'''
+NEED TO HAVE A BETTER UNDERSTANDING ON THIS CONCEPT
+'''
+
+
+'''
+WRITE A PROGRAM TO FIND THE SECOND LARGET ELEMENT IN A LIST
+'''
+
+
+def largestElement(list):
+    largest = list[0]
+    for i in list:
+        if (i > largest):
+            largest = i
+    return largest
+
+
+def secondLargest(list):
+    if (len(list) < 2):
+        return None
+
+    largestNumber = largestElement(list)
+    secondLargest = list[0]
+    for i in list:
+        if i != largestNumber and i > secondLargest:
+            secondLargest = i
+        # print(i)
+    return secondLargest
+
+
+# print(secondLargest([2, 9, 10, 25, 81, 23]))
